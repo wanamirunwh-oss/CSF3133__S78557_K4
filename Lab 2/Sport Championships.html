@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>University Sport Championships</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>University Sport Championships</h1>
+    <nav>
+        <a href="#schedule-table">Schedule</a> | <a href="#about">About</a> |
+        <a href="#register">Register</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About the Sports</h2>
+        
+        <article>
+            <h3>Football</h3>
+            <p>A team sport played between two teams of 11 players, where the main objective is to score by kicking or heading a ball into the opponent's goal without using hands or arms.</p>
+        </article>
+
+        <article>
+            <h3>Badminton</h3>
+            <p>A racket sport played by either two opposing players (singles) or two opposing pairs (doubles), who score points by striking a shuttlecock with their rackets so that it passes over the net and lands in the opponent's half of the court.</p>
+        </article>
+
+        <article>
+            <h3>Volleyball</h3>
+            <p>A team sport where two teams of six players are separated by a net, and each team tries to score points by grounding a ball on the opponent's court using their hands or arms within three allowed touches.</p>
+        </article>
+
+        <article>
+            <h3>100m run</h3>
+            <p>A premier track and field event where athletes sprint a distance of 100 meters in a straight line, testing pure human speed, explosive power, and acceleration to the absolute limit.</p>
+        </article>
+
+        <article>
+            <h3>Esports</h3>
+            <p>A form of competitive video gaming where professional players or teams compete against each other in organized tournaments, requiring high strategic thinking, lightning-fast reflexes, and teamwork.</p>
+        </article>
+
+        <article>
+            <h3>Rugby</h3>
+            <p>A high-contact team sport played with an oval-shaped ball, where the main objective is to score points by carrying, passing, and kicking the ball over the opponent's goal line to score a try, or by kicking it through the goalposts.</p>
+        </article>
+    </section>
+
+    <section>
+        <h2 id="schedule-table">Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Venue</th>
+                    <th scope="col">Person in charge</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2" scope="row">9 am</th>
+                    <td>Football</td>
+                    <td>Field</td>
+                    <td>Mohd Mbappe</td>
+                </tr>
+                <tr>
+                    <td>Badminton</td>
+                    <td>Badminton Court</td>
+                    <td>Wan Lindan</td>
+                </tr>
+                <tr>
+                    <th scope="row">1 pm</th>
+                    <td>100m run</td>
+                    <td>Running track</td>
+                    <td>Usain Ahmed</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Lunch Break 2 pm!</td>
+                </tr>
+                <tr>
+                    <th scope="row">3 pm</th>
+                    <td>Esports</td>
+                    <td>Dewan Al Falah</td>
+                    <td>Hisyam Lingam</td>
+                </tr>
+                <tr>
+                    <th scope="row">4 pm</th>
+                    <td>Volleyball</td>
+                    <td>Beach</td>
+                    <td>Khairul Amin</td>
+                </tr>
+                <tr>
+                    <th scope="row">6 pm</th>
+                    <td>Rugby</td>
+                    <td>Rugby field</td>
+                    <td>Michael Jordan</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2 id="register">Registration Form</h2>
+        <form action="submit_form.php" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <label for="fname">Full Name:</label><br>
+                <input type="text" id="fname" name="firstname"><br><br>
+
+                <label for="mnumber">Matric Number:</label><br>
+                <input type="text" id="mnumber" name="matric_number"><br><br>
+
+                <p>Year of study:</p>
+                <input type="radio" id="year1" name="Year" value="Year 1">
+                <label for="year1">Year 1</label><br>
+                <input type="radio" id="year2" name="Year" value="Year 2">
+                <label for="year2">Year 2</label><br>
+                <input type="radio" id="year3" name="Year" value="Year 3">
+                <label for="year3">Year 3</label><br>
+                <input type="radio" id="year4" name="Year" value="Year 4">
+                <label for="year4">Year 4</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Session & Faculty Selection</legend>
+                
+                <p>Session student join:</p>
+                <input type="checkbox" id="session1" name="session1" value="Football">
+                <label for="session1">Football</label><br>
+
+                <input type="checkbox" id="session2" name="session2" value="Badminton">
+                <label for="session2">Badminton</label><br>
+
+                <input type="checkbox" id="session3" name="session3" value="100m run">
+                <label for="session3">100m run</label><br>
+
+                <input type="checkbox" id="session4" name="session4" value="Esports">
+                <label for="session4">Esports</label><br>
+
+                <input type="checkbox" id="session5" name="session5" value="Volleyball">
+                <label for="session5">Volleyball</label><br>
+
+                <input type="checkbox" id="session6" name="session6" value="Rugby">
+                <label for="session6">Rugby</label><br><br>
+
+                <label for="Faculty">Choose a Faculty:</label><br>
+                <select id="Faculty" name="Faculty">
+                    <option value="Mathematic">Mathematic</option>
+                    <option value="Science Computer">Science Computer</option>
+                    <option value="Biology">Biology</option>
+                    <option value="Chemistry">Chemistry</option>
+                </select><br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Copyright &copy; 2026 Sport Championships</p>
+</footer>
+</body>
+</html>

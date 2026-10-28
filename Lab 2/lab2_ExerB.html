@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+        <!-- Nav dipindahkan ke dalam header untuk struktur semantik yang tepat -->
+        <nav>
+            <a href="#results">Results</a> | 
+            <a href="#form">Feedback Form</a> | 
+            <a href="#comments">Student Comments</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECTION: Results Table -->
+        <section id="results">
+            <h2>Feedback Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Week</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Introduction to HTML</td>
+                        <td>4.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td colspan="2">Tables and Forms</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Semantic HTML</td>
+                        <td>4.0</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td rowspan="2">Mini Project</td>
+                        <td>4.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>4.8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">Average Rating</th>
+                        <td>4.3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- SECTION: Feedback Form -->
+        <section id="form">
+            <h2>Give Your Feedback</h2>
+            <form action="submit_feedback.php" method="post">
+                <fieldset>
+                    <legend>Personal & Section Details</legend>
+                    
+                    <label for="fullname">Name:</label><br>
+                    <input type="text" id="fullname" name="name"><br><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    
+                    <label for="section_group">Section/Group:</label><br>
+                    <select id="section_group" name="section_group">
+                        <option value="Group 1">Group 1</option>
+                        <option value="Group 2">Group 2</option>
+                        <option value="Group 3">Group 3</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Course Evaluation & Preferences</legend>
+
+                    <p>Overall rating:</p>
+                    <input type="radio" id="good" name="rating" value="good">
+                    <label for="good">Good</label><br>
+                    
+                    <input type="radio" id="average" name="rating" value="average">
+                    <label for="average">Average</label><br>
+                    
+                    <input type="radio" id="poor" name="rating" value="poor">
+                    <label for="poor">Poor</label><br><br>
+                    
+                    <input type="checkbox" id="lab" name="lab" value="yes">
+                    <label for="lab">I attended all labs</label><br><br>
+
+                    <p>Topics I want more practice on:</p>
+                    <input type="checkbox" id="practice_html" name="practice_topic_html" value="HTML">
+                    <label for="practice_html">HTML Basics</label><br>
+                    
+                    <input type="checkbox" id="practice_tables" name="practice_topic_tables" value="Tables">
+                    <label for="practice_tables">Tables & Forms</label><br>
+                    
+                    <input type="checkbox" id="practice_semantic" name="practice_topic_semantic" value="Semantic">
+                    <label for="practice_semantic">Semantic HTML</label><br>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- SECTION: Student Comments Section -->
+        <section id="comments">
+            <h2>Student Comments</h2>
+            <article>
+                <h3>Ahmad bin Ali</h3>
+                <p>The feedback session was very helpful in understanding how to structure tables and forms correctly!</p>
+            </article>
+            <article>
+                <h3>Siti Sarah</h3>
+                <p>Great course content, especially the practical labs and mini-project guidance.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+</body>
+</html>
