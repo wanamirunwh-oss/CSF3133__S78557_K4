@@ -1,0 +1,63 @@
+
+/* 1. Navigation Bar Styling */
+nav ul {
+    list-style-type: none; 
+    background-color: #01FFC0;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: Black;
+    padding: 14px 20px; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+}
+
+/* Hover effect untuk menu  */
+nav li a:hover {
+    background-color: #333;
+}
+
+/* 2. Heading Text Decoration  */
+h1 {
+    text-decoration: overline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* 3. Old price line-through  */
+.old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+/* 4. ID & Class Selectors  */
+#destinations {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd; }
+
+.card {
+    margin-bottom: 15px;
+}
+
+/* Form styling  */
+.trip-form {
+    background-color: #e2e2e2;
+    padding: 20px;
+    border: 1px solid #bbb;
+    width: 50%; }
+
+/* Responsive Image/Video  */
+video {
+    max-width: 100%;
+    height: auto;
+}

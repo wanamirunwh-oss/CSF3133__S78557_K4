@@ -1,0 +1,123 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #1A5276;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 3px;
+}
+
+nav ul li a:link {
+    color: #FFFFFF;
+}
+
+nav ul li a:visited {
+    color: #D7BDE2;
+}
+
+nav ul li a:hover {
+    background-color: #E67E22;
+    color: #FFFFFF;
+}
+
+nav ul li a:active {
+    background-color: #C0392B;
+}
+
+/* --- General Typography & Layout --- */
+h1 {
+    text-decoration: overline;
+}
+
+p {
+    color: #333333;
+    text-align: justify;
+}
+
+#intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
+
+/* --- Menu Promotion Styles --- */
+.old-price {
+    text-decoration: line-through;
+    color: #7F8C8D;
+    margin-right: 5px;
+}
+
+/* --- Responsive Video Styles --- */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 5px;
+}
+
+/* --- Feedback Form Styles --- */
+.feedback-form {
+    background-color: #F4F6F7;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.feedback-form .radio-group,
+.feedback-form .checkbox-group {
+    margin-top: 5px;
+}
+
+.feedback-form button {
+    margin-top: 15px;
+    background-color: #1A5276;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.feedback-form button:hover {
+    background-color: #E67E22;
+}
+
+/* --- Footer Address Styling --- */
+address {
+    font-style: normal;
+    margin-bottom: 5px;
+}
