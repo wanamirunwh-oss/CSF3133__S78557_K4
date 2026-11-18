@@ -1,0 +1,125 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f2eb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-image: url('header-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+header p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* 2. Horizontal Navigation Bar */
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #d97706;
+}
+
+nav li a.active {
+    background-color: #c2410c;
+}
+
+/* 3. Content Section & Wrapper */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+#menu-table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#menu-table th, 
+#menu-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px 15px;
+}
+
+#menu-table th {
+    background-color: #f97316;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+#menu-table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+#menu-table tr:hover {
+    background-color: #fef3c7;
+}
+
+.price-col {
+    text-align: right;
+}
+
+footer {
+    background-color: #e5e0d8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #d1ccc0;
+}
